@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techville Data Upload</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>FlaskHR Excel to MySQL</h1>
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="employee-file">Upload Employee Excel File:</label>
+                <input type="file" id="employee-file" name="employee_file"><br><br>
+                
+                <label for="company-file">Upload Company Excel File:</label>
+                <input type="file" id="company-file" name="company_file"><br><br>
+                
+                <button type="submit" id="upload-btn">Upload Data</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
